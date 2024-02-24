@@ -1,0 +1,29 @@
+.tableHeader,
+.tableHeader th {
+	background-color: var(--color-tertiary);
+	color: var(--color-header);
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+	border-color: var(--color-tertiary) !important;
+	border-style: solid;
+	border-width: 0;
+	text-align: center;
+}
+
+.striped_table tbody tr:nth-child(even) td {
+	background-color: var(--color-primary);
+}
+
+.striped_table tbody tr:nth-child(odd) td {
+	background-color: var(--color-secondary);
+}
+
+tbody tr td {
+	color: var(--color-body-text) !important;
+}

@@ -1,0 +1,1 @@
+export { MIN_PASSWORD_LENGTH } from './min-password-length';

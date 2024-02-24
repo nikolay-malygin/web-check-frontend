@@ -1,0 +1,11 @@
+.link {
+	transition: var(--transition-default);
+	color: var(--color-header) !important;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.link:hover {
+	background-color: var(--color-tertiary) !important;
+	padding-left: 1.5rem;
+}

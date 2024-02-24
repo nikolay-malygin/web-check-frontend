@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+	--font-header: 'Inter', sans-serif;
+	--font-body: 'Inter', sans-serif;
+
+	--transition-default: all 250ms ease-in-out;
+}
+
+/* Hide the scrollbar of the window/element */
+*::-webkit-scrollbar {
+	width: 0 !important;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: transparent !important;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: transparent !important;
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+*,
+*::after,
+*:not(i)::before,
+*::placeholder {
+	font-family: var(--font-body);
+	color: var(--color-body-text);
+}
+
+body {
+	min-height: 100vh;
+	line-height: 1.75 !important;
+	letter-spacing: 0.02rem !important;
+	background-color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-header-text) !important;
+	letter-spacing: -0.04375rem !important;
+	font-weight: 600 !important;
+}
+
+.color-header,
+.color-header i {
+	color: var(--color-header-text) !important;
+}
+.color-body,
+.color-body i {
+	color: var(--color-body-text) !important;
+}
+
+.background-primary {
+	background-color: var(--color-primary) !important;
+}
+
+.background-secondary {
+	background-color: var(--color-secondary) !important;
+}
+
+.background-tertiary {
+	background-color: var(--color-tertiary) !important;
+}
+
+.border-tertiary {
+	border: 1px solid var(--color-tertiary) !important;
+}
+
+.background-red {
+	background-color: var(--color-red) !important;
+}
+.color-red,
+i.color-red::before,
+.color-red i {
+	color: var(--color-red) !important;
+}
+
+.background-blue {
+	background-color: var(--color-blue) !important;
+}
+.color-blue,
+i.color-blue::before,
+.color-blue i {
+	color: var(--color-blue) !important;
+}
+
+.background-green {
+	background-color: var(--color-green) !important;
+}
+.color-green,
+i.color-green::before,
+.color-green i {
+	color: var(--color-green) !important;
+}
+
+.color-white,
+i.color-white::before,
+.color-white i {
+	color: var(--color-white) !important;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: 700 !important;
+}
+
+.title-bigger {
+	font-size: clamp(30px, 3vw, 45px);
+}
+
+.btn {
+	color: var(--color-white);
+	transition: var(--transition-default);
+}
+.btn i {
+	color: var(--color-white);
+}
+.btn:hover {
+	color: var(--color-white);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px var(--color-tertiary) inset !important;
+	-webkit-text-fill-color: var(--color-body-text) !important;
+}
+
+.truncate-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+
+.form-check-input:checked {
+	background-color: var(--color-blue) !important;
+}
+
+.min-vh-90 {
+	min-height: 90vh;
+}
+.vh-90 {
+	height: 90vh;
+}

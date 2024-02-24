@@ -1,0 +1,14 @@
+.checkbox {
+	border-color: var(--color-tertiary);
+	width: 1.3em;
+	height: 1.3em;
+	margin-right: 0.5rem;
+}
+
+.checkbox:focus {
+	box-shadow: none;
+}
+
+.checkbox:hover, .label:hover {
+	cursor: pointer;
+}
